@@ -122,6 +122,7 @@ main {
 
 #copyright {
   padding-left: 35px;
+  color: white;
 }
 @media (max-width: 900px) {
   #copyright {

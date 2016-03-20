@@ -12,6 +12,7 @@ description: > # this means to ignore newlines until "baseurl:"
   Welcome to Annie Liu's website porfolio. 
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "http://www.colourchaos.com" # the base hostname & protocol for your site
+timezone: America/Los_Angeles
 twitter_username: Colour_Chaos
 github_username:  th3perfectfl4w
 

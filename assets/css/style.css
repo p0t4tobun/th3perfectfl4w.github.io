@@ -107,9 +107,6 @@ main {
   color: white;
   text-decoration: none;
 }
-#main-nav li a:hover {
-  color: #A8A8A8;
-}
 @media (max-width: 900px) {
   #main-nav {
     position: fixed;
@@ -119,6 +116,16 @@ main {
     font-size: 1.6em;
   }
 }
+
+#main-nav hr {
+  height: .3rem;
+  width: 25%;
+  margin: 0;
+  background: none;
+  border: none;
+  transition: .4s ease-in-out;
+}
+
 
 #copyright {
   padding-left: 35px;

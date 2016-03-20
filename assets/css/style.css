@@ -114,7 +114,7 @@ main {
     background-color: #181818;
     width: 100%;
     font-size: 1.6em;
-    z-index: 100;
+    z-index: 200;
   }
 }
 

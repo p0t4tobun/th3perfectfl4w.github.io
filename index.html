@@ -2,22 +2,40 @@
 layout: default
 ---
 
-<div class="home">
+<div class="grid-100 medium-grid-100 small-grid-100">
+  <section class="block block_content block_border">
+    <h1>Hello, I'm Annie - a website developer at Cal Poly, San Luis Obispo.</h1>
+    <p>A few things about me:</p>
+    <ul>
+      <li>I'm a full time software developer working for California Polytechnic State University and a freelance website developer.</li>
+      <li>I hope to continue to improve my skills and achieve my life goal of becoming a full-stack web developer.</li>
+      <li>I'm also an avid video gamer, when I can find time between work and other responsibilities. I play mostly FPS's and puzzle and/or music games.</li>
+    </ul>
+    <p><a href="/about">Read more...</a></p>
+  </section>
+  
+  <section class="block block_content block_border">
+    <h3>Featured Projects</h3>
+    <p><a href="/portfolio">View complete portfolio</a></p>
+  </section>
 
-  <h1 class="page-heading">Posts</h1>
+  <section class="block block_content block_border">
+    <h3>Recent Blog Posts</h3>
 
-  <ul class="post-list">
-    {% for post in site.posts %}
-      <li>
-        <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
+    <ul class="post-list">
+      {% for post in site.posts %}
+        <li>
+          <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
 
-        <h2>
-          <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
-        </h2>
-      </li>
-    {% endfor %}
-  </ul>
+          <h2>
+            <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
+          </h2>
+        </li>
+      {% endfor %}
+    </ul>
 
-  <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>
+    <p><a href="/blog">View more blog posts...</a>
+    <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>
+  </section>
 
 </div>

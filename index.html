@@ -12,7 +12,7 @@ title: Home
       <li>My experience is mostly in web dev, but I'm also interested in cybersecurity and devops/workflow management.</li>
       <li>In my free time I enjoy gaming, EDM, and mixing drinks, though not necessarily in that order. ;)</li>
     </ul>
-    <p><a href="/about">Read more...</a></p>
+    <p><a href="#about">Read more...</a></p>
   </section>
   
   <section class="block block_content block_border">
@@ -44,29 +44,86 @@ title: Home
       </a>
     </div>
 
-    <div style="clear: both;">
-      <p><a href="/portfolio">View complete portfolio</a></p>
+    <div class="project">
+      <a href="http://www.southplacerepc.org/" target="_blank">
+        <div class="box">
+          <img class="thumb" src="/assets/img/proj/SPEPC.jpg" alt="South Placer Estate Planning Council website screenshot">
+          <div class="caption fade-caption">
+            <h3>South Placer Estate Planning Council</h3>
+            <p>Website development + maintenance</p>
+            <p>CLICK TO VISIT SITE</p>
+          </div>
+        </div>
+      </a>
+    </div>
+
+    <div class="project">
+      <a href="http://www.pacificmidwiferycare.com/" target="_blank">
+        <div class="box">
+          <img class="thumb" src="/assets/img/proj/PacificMidwifery.jpg" alt="Pacific Midwifery website screenshot">
+          <div class="caption fade-caption">
+            <h3>Pacific Midwifery Care</h3>
+            <p>Website development + maintenance</p>
+            <p>CLICK TO VISIT SITE</p>
+          </div>
+        </div>
+      </a>
     </div>
   </section>
 
-  <section class="block block_content block_border">
-    <h3>Recent Blog Posts</h3>
+  <section class="block block_content block_border" id="about">
+    <h3>About</h3>
 
-    <ul class="post-list">
-      {% for post in site.posts offset: 0 limit: 5 %}
-        <li>
-          <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
-
-          <h2>
-            <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
-          </h2>
-          <p>{{ post.excerpt | remove: '<p>' | remove: '</p>' }} <a href="{{ post.url | prepend: site.baseurl }}">Read more...</a></p>
-        </li>
-      {% endfor %}
+    <ul>
+      <li>I'm an IT Technical Associate at Kaiser Permanente and a Cal Poly SLO alumna (B.S. Computer Science).</li>
+      <li>My experience is mostly in web dev, but I'm also interested in cybersecurity and devops/workflow management. I love being involved in the process of designing, coding, and seeing a website come to life, and I hope to continue to improve my skills and achieve my life goal of becoming a full-stack developer. <strong>To me, being a full-stack developer means understanding every major technology and its applications to the extent that you can clearly see the connections between each layer of the stack.</strong> Here's a good explanation of the web development stack if you're interested in what it encompasses: <a href="http://www.sitepoint.com/full-stack-developer/" target="_blank">Being a Full Stack Developer (SitePoint)</a></li>
+      <li>In my free time I enjoy gaming, EDM, and mixing drinks, though not necessarily in that order. ;)</li>
     </ul>
 
-    <p><a href="/blog">View more blog posts...</a>
-    <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>
+    <h3 style="margin-bottom: -20px;">Skills and Expertise</h3>
   </section>
-
 </div>
+ 
+<div class="grid-50 medium-grid-100 small-grid-100">
+  <section class="block block_content">
+    <p><strong>Website Development</strong></p>
+
+    <em>Front-end</em>
+    <ul>
+      <li>HTML5, CSS3, JavaScript</li>
+      <li>Responsive design methodology</li>
+    </ul>
+    <em>Back-end</em>
+    <ul>
+      <li>Java, C/C++, Python, Node.js</li>
+      <li>AWS for enterprise use</li>
+      <li>Apache, MySQL, PHP, phpMyAdmin</li>
+      <li>C#, ASP.NET, MSSQL</li>
+    </ul>
+
+    <p><a href="http://www.linkedin.com/in/colourchaos" target="_blank">View my LinkedIn profile</a></p>
+    <p>Resume in pdf form: <a href="/assets/files/Resume_Annie.pdf">Download pdf</a></p>
+  </section>
+</div>
+
+<div class="grid-50 medium-grid-100 small-grid-100">
+  <section class="block block_content">
+    <p><strong>Frameworks</strong></p>
+
+    <ul>
+      <li>Drupal, WordPress CMS</li>
+      <li>jQuery</li>
+      <li>SASS</li>
+    </ul>
+
+    <p><strong>Tools</strong></p>
+    <ul>
+      <li>Git, Subversion</li>
+      <li>Ansible</li>
+      <li>Photoshop</li>
+      <li>Agile methodology</li>
+    </ul>
+  </section>
+</div>
+
+<div class="clear"></div>
